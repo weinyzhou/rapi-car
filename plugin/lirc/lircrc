@@ -1,0 +1,54 @@
+begin
+     prog 	= carRobot
+     button = KEY_CHANNELDOWN
+	 repeat = 1
+     config = car_back
+end 
+begin
+     prog 	= carRobot
+     button = KEY_CHANNELUP
+	 repeat = 1
+     config = car_front
+end
+begin
+     prog 	= carRobot
+     button = KEY_STOP
+	 repeat = 1
+     config = car_stop
+end
+begin
+     prog 	= carRobot
+     button = KEY_PREVIOUS
+	 repeat = 1
+     config = car_left
+end 
+begin
+     prog 	= carRobot
+     button = KEY_VOLUMEDOWN
+	 repeat = 1
+     config = car_leftback
+end
+begin
+     prog 	= carRobot
+     button = KEY_NEXT
+	 repeat = 1
+     config = car_right
+end 
+begin
+     prog 	= carRobot
+     button = KEY_VOLUMEUP
+	 repeat = 1
+     config = car_rightback
+end
+begin
+     prog 	= carRobot
+     button = KEY_9
+	 repeat = 1
+     config = car_off
+end 
+begin
+     prog 	= carRobot
+     button = KEY_8
+	 repeat = 1
+     config = car_reboot
+end 
