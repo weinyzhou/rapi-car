@@ -1,15 +1,16 @@
 local car=require 'car';
 local carGpio={
-	f={12,3,5,0},
-	b={6,4,2,1},
-	lf={5,3,0},
-	lb={6,4,1},
-	rf={12,5,0},
-	rb={6,4,2},
+	f={29,24,2--[[,2]]},
+	b={28,25,3--[[,3]]},
+	lf={24,2--[[,0]]},
+	lb={--[[6,4,1]]},
+	rf={29,2--[[,0]]},
+	rb={--[[6,4,2]]},
 };
 local function showdiagmsg(text)
-	os.execute('killall diag');
-	os.execute('diag -s "'..text..'"');
+	--[[os.execute('killall diag');
+
+	os.execute('diag -s "'..text..'"')]]--;
 end
 
 local function carStop()

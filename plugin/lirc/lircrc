@@ -1,12 +1,12 @@
 begin
      prog 	= carRobot
-     button = KEY_CHANNELDOWN
+     button = KEY_DOWN
 	 repeat = 1
      config = car_back
 end 
 begin
      prog 	= carRobot
-     button = KEY_CHANNELUP
+     button = KEY_UP
 	 repeat = 1
      config = car_front
 end
@@ -18,7 +18,7 @@ begin
 end
 begin
      prog 	= carRobot
-     button = KEY_PREVIOUS
+     button = KEY_LEFT
 	 repeat = 1
      config = car_left
 end 
@@ -30,7 +30,7 @@ begin
 end
 begin
      prog 	= carRobot
-     button = KEY_NEXT
+     button = KEY_RIGHT
 	 repeat = 1
      config = car_right
 end 
@@ -42,13 +42,13 @@ begin
 end
 begin
      prog 	= carRobot
-     button = KEY_9
+     button = KEY_POWER
 	 repeat = 1
      config = car_off
 end 
 begin
      prog 	= carRobot
-     button = KEY_8
+     button = KEY_RESTART
 	 repeat = 1
      config = car_reboot
 end 

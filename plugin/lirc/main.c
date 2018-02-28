@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
 			if(lua)lua_close(lua);
 	        return 0;  
 	     } 
-         if(lirc_readconfig(NULL,&config,NULL)==0)
+         if(lirc_readconfig("/etc/lirc/lircrc",&config,NULL)==0)
          {
                    char *code=NULL;
                    char *c;
@@ -79,7 +79,7 @@ int main(int argc, char *argv[])
 				   
                    while(lirc_nextcode(&code)==0)
                    {
-					   //printf("read lirc_nextcode code is %p value=%s\n",code,code);
+					   printf("read lirc_nextcode code is %p value=%s\n",code,code);
                             if(code==NULL) continue;
 
                             while((ret=lirc_code2char(config,code,&c))==0 &&
@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
                             {
 
                             	const char* p=NULL;
-                            	//printf("lirc_code2char %s.\n",c);
+                            	printf("lirc_code2char %s.\n",c);
                             	if(strncmp(c,"car_",4)){
                             		continue;
                             	}
@@ -197,8 +197,10 @@ int main(int argc, char *argv[])
                                 
 
                             }
+                            printf("operation end\n",code,code);
                             free(code);
                             if(ret==-1) break;
+
                    }
                    lirc_freeconfig(config);
          }
